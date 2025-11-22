@@ -1,0 +1,27 @@
+    <p>
+        Si te gustaría recibir más información, materiales complementarios o actualizaciones relacionadas con este tema, te invitamos a 
+        completar el siguiente formulario con tus datos de contacto. Nuestro equipo se encargará de enviarte contenido útil y confiable 
+        directamente a tu correo electrónico.
+    </p>
+
+    <h3>
+        Tu participación es muy valiosa: al mantenerte informado, también te convertís en parte de la solución frente a uno de los desafíos 
+        más grandes de nuestra época.
+    </h3>
+
+    <form id="form_contacto">
+        <label for="text">Ingrese su nombre y apellido</label>
+        <input type="text" placeholder="Ej: Juan Perez" required>
+
+        <label for="email">Ingrese su email</label>
+        <input type="email" placeholder="email@dominio.com" required>
+
+        <div class="captcha">
+            <img src="Imgs/captcha/ZNAZBG.jpg" alt="captcha" id="img_captcha">
+            <input type="text" placeholder="Ingrese el texto de la imagen" id="input_captcha">
+            <button type="button" id="btn_captcha">Recargar</button>
+        </div>
+
+        <p id="msjCaptcha"></p>
+        <button type="button" id="btn_enviar">Enviar</button>
+    </form>

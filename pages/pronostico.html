@@ -1,0 +1,86 @@
+    <h2>Pronóstico del tiempo</h2>
+
+    <!-- Filtro y botones -->
+    <div class="filtro-container">
+        <input type="text" id="filtro_condicion" placeholder="Buscar...">
+        <button id="btn_limpiar_filtro">Limpiar Filtro</button>
+        <button id="btn_anterior">Semana Anterior</button>
+        <button id="btn_siguiente">Semana Siguiente</button>
+        <button id="btn_abrir_agregar">Agregar Pronóstico</button>
+    </div>
+
+    <div class="scroll_horizontal">
+        <table id="tabla_clima">
+            <thead>
+                <td id="dia">Día</td>
+                <td id="condicion">Condición</td>
+                <td id="temperatura_maxima">Temperatura Máxima</td>
+                <td id="temperatura_minima">Temperatura Mínima</td>
+                <td id="Probabilidad_de_lluvia">Probabilidad de lluvia</td>
+                <td id="acciones">Acciones</td>
+            </thead>
+            <tbody>
+    
+            </tbody>
+    
+        </table>
+    </div>
+
+    <!-- Popup Agregar pronostico -->
+    <div id="popup_overlay_agregar" class="popup-overlay">
+        <div id="popup_agregar" class="popup-modal">
+            <h3>Agregar Pronóstico</h3>
+            <form id="form_agregar">
+                <label for="id_agregar">ID</label>
+                <input type="number" id="id_agregar" placeholder="ID">
+
+                <label for="dia_agregar">Día</label>
+                <input type="text" id="dia_agregar" placeholder="Día">
+
+                <label for="condicion_agregar">Condición</label>
+                <input type="text" id="condicion_agregar" placeholder="Condición">
+
+                <label for="temp_max_agregar">Temperatura Máxima</label>
+                <input type="number" id="temp_max_agregar" placeholder="Temp. Máxima">
+
+                <label for="temp_min_agregar">Temperatura Mínima</label>
+                <input type="number" id="temp_min_agregar" placeholder="Temp. Mínima">
+
+                <label for="prob_lluvia_agregar">Probabilidad de lluvia</label>
+                <input type="number" id="prob_lluvia_agregar" placeholder="Probabilidad de lluvia">
+
+                <div class="popup-botones">
+                    <button type="button" id="btn_cancelar_agregar">Cancelar</button>
+                    <button type="button" id="btn_agregar">Agregar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Popup Modificar pronostico -->
+    <div id="popup_overlay" class="popup-overlay">
+        <div id="popup_modificar" class="popup-modal">
+            <h3>Modificar Pronóstico</h3>
+            <form id="form_modificar">
+                <label for="dia_modificar">Día</label>
+                <input type="text" id="dia_modificar" placeholder="Día">
+
+                <label for="condicion_modificar">Condición</label>
+                <input type="text" id="condicion_modificar" placeholder="Condición">
+
+                <label for="temp_max_modificar">Temperatura Máxima</label>
+                <input type="number" id="temp_max_modificar" placeholder="Temp. Máxima">
+
+                <label for="temp_min_modificar">Temperatura Mínima</label>
+                <input type="number" id="temp_min_modificar" placeholder="Temp. Mínima">
+
+                <label for="prob_lluvia_modificar">Probabilidad de lluvia</label>
+                <input type="number" id="prob_lluvia_modificar" placeholder="Probabilidad de lluvia">
+
+                <div class="popup-botones">
+                    <button type="button" id="btn_cancelar">Cancelar</button>
+                    <button type="button" id="btn_modificar">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
