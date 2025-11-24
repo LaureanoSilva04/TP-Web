@@ -1,0 +1,2 @@
+Github Pages:https://laureanosilva04.github.io/TP-Web/#pages/estadisticas.html
+Mockapi: https://68f6aa0c6b852b1d6f1761d8.mockapi.io/api/v1/Clima
