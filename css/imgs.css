@@ -1,0 +1,31 @@
+.content-acuerdo img,
+.imgs-ul img {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.content-acuerdo img:hover,
+.imgs-ul img:hover {
+  transform: scale(1.03);
+}
+
+
+
+.imgs-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    
+  .imgs-ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

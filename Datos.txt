@@ -1,0 +1,404 @@
+https://68f6aa0c6b852b1d6f1761d8.mockapi.io/api/v1/Clima
+
+[
+  {
+    "dia": "Lunes 27/10",
+    "condicion": "Lluvia",
+    "temperatura_maxima": 24,
+    "temperatura_minima": 17,
+    "Probabilidad_de_lluvia": 70,
+    "id": "1"
+  },
+  {
+    "dia": "Martes 28/10",
+    "condicion": "Tormenta",
+    "temperatura_maxima": 26,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 90,
+    "id": "2"
+  },
+  {
+    "dia": "Miércoles 29/10",
+    "condicion": "Nublado",
+    "temperatura_maxima": 23,
+    "temperatura_minima": 16,
+    "Probabilidad_de_lluvia": 40,
+    "id": "3"
+  },
+  {
+    "dia": "Jueves 30/10",
+    "condicion": "Soleado",
+    "temperatura_maxima": 29,
+    "temperatura_minima": 15,
+    "Probabilidad_de_lluvia": 10,
+    "id": "4"
+  },
+  {
+    "dia": "Viernes 31/10",
+    "condicion": "Parcialmente nublado",
+    "temperatura_maxima": 28,
+    "temperatura_minima": 17,
+    "Probabilidad_de_lluvia": 25,
+    "id": "5"
+  },
+  {
+    "dia": "Sábado 01/11",
+    "condicion": "Soleado",
+    "temperatura_maxima": 31,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 5,
+    "id": "6"
+  },
+  {
+    "dia": "Domingo 02/11",
+    "condicion": "Lluvia",
+    "temperatura_maxima": 24,
+    "temperatura_minima": 18,
+    "Probabilidad_de_lluvia": 65,
+    "id": "7"
+  },
+  {
+    "dia": "Lunes 03/11",
+    "condicion": "Tormenta",
+    "temperatura_maxima": 25,
+    "temperatura_minima": 20,
+    "Probabilidad_de_lluvia": 85,
+    "id": "8"
+  },
+  {
+    "dia": "Martes 04/11",
+    "condicion": "Nublado",
+    "temperatura_maxima": 26,
+    "temperatura_minima": 18,
+    "Probabilidad_de_lluvia": 35,
+    "id": "9"
+  },
+  {
+    "dia": "Miércoles 05/11",
+    "condicion": "Soleado",
+    "temperatura_maxima": 30,
+    "temperatura_minima": 17,
+    "Probabilidad_de_lluvia": 10,
+    "id": "10"
+  },
+  {
+    "dia": "Jueves 06/11",
+    "condicion": "Parcialmente nublado",
+    "temperatura_maxima": 29,
+    "temperatura_minima": 18,
+    "Probabilidad_de_lluvia": 20,
+    "id": "11"
+  },
+  {
+    "dia": "Viernes 07/11",
+    "condicion": "Lluvia",
+    "temperatura_maxima": 25,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 70,
+    "id": "12"
+  },
+  {
+    "dia": "Sábado 08/11",
+    "condicion": "Tormenta",
+    "temperatura_maxima": 27,
+    "temperatura_minima": 21,
+    "Probabilidad_de_lluvia": 90,
+    "id": "13"
+  },
+  {
+    "dia": "Domingo 09/11",
+    "condicion": "Nublado",
+    "temperatura_maxima": 24,
+    "temperatura_minima": 17,
+    "Probabilidad_de_lluvia": 40,
+    "id": "14"
+  },
+  {
+    "dia": "Lunes 10/11",
+    "condicion": "Soleado",
+    "temperatura_maxima": 31,
+    "temperatura_minima": 18,
+    "Probabilidad_de_lluvia": 10,
+    "id": "15"
+  },
+  {
+    "dia": "Martes 11/11",
+    "condicion": "Parcialmente nublado",
+    "temperatura_maxima": 30,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 20,
+    "id": "16"
+  },
+  {
+    "dia": "Miércoles 12/11",
+    "condicion": "Lluvia",
+    "temperatura_maxima": 26,
+    "temperatura_minima": 20,
+    "Probabilidad_de_lluvia": 75,
+    "id": "17"
+  },
+  {
+    "dia": "Jueves 13/11",
+    "condicion": "Tormenta",
+    "temperatura_maxima": 28,
+    "temperatura_minima": 21,
+    "Probabilidad_de_lluvia": 90,
+    "id": "18"
+  },
+  {
+    "dia": "Viernes 14/11",
+    "condicion": "Nublado",
+    "temperatura_maxima": 25,
+    "temperatura_minima": 18,
+    "Probabilidad_de_lluvia": 45,
+    "id": "19"
+  },
+  {
+    "dia": "Sábado 15/11",
+    "condicion": "Soleado",
+    "temperatura_maxima": 33,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 5,
+    "id": "20"
+  },
+  {
+    "dia": "Domingo 16/11",
+    "condicion": "Parcialmente nublado",
+    "temperatura_maxima": 30,
+    "temperatura_minima": 20,
+    "Probabilidad_de_lluvia": 25,
+    "id": "21"
+  },
+  {
+    "dia": "Lunes 17/11",
+    "condicion": "Lluvia",
+    "temperatura_maxima": 27,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 65,
+    "id": "22"
+  },
+  {
+    "dia": "Martes 18/11",
+    "condicion": "Tormenta",
+    "temperatura_maxima": 28,
+    "temperatura_minima": 21,
+    "Probabilidad_de_lluvia": 90,
+    "id": "23"
+  },
+  {
+    "dia": "Miércoles 19/11",
+    "condicion": "Nublado",
+    "temperatura_maxima": 26,
+    "temperatura_minima": 18,
+    "Probabilidad_de_lluvia": 35,
+    "id": "24"
+  },
+  {
+    "dia": "Jueves 20/11",
+    "condicion": "Soleado",
+    "temperatura_maxima": 32,
+    "temperatura_minima": 20,
+    "Probabilidad_de_lluvia": 5,
+    "id": "25"
+  },
+  {
+    "dia": "Viernes 21/11",
+    "condicion": "Parcialmente nublado",
+    "temperatura_maxima": 29,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 20,
+    "id": "26"
+  },
+  {
+    "dia": "Sábado 22/11",
+    "condicion": "Lluvia",
+    "temperatura_maxima": 25,
+    "temperatura_minima": 18,
+    "Probabilidad_de_lluvia": 70,
+    "id": "27"
+  },
+  {
+    "dia": "Domingo 23/11",
+    "condicion": "Tormenta",
+    "temperatura_maxima": 27,
+    "temperatura_minima": 20,
+    "Probabilidad_de_lluvia": 85,
+    "id": "28"
+  },
+  {
+    "dia": "Lunes 24/11",
+    "condicion": "Nublado",
+    "temperatura_maxima": 26,
+    "temperatura_minima": 17,
+    "Probabilidad_de_lluvia": 40,
+    "id": "29"
+  },
+  {
+    "dia": "Martes 25/11",
+    "condicion": "Soleado",
+    "temperatura_maxima": 31,
+    "temperatura_minima": 18,
+    "Probabilidad_de_lluvia": 5,
+    "id": "30"
+  },
+  {
+    "dia": "Miércoles 26/11",
+    "condicion": "Parcialmente nublado",
+    "temperatura_maxima": 30,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 20,
+    "id": "31"
+  },
+  {
+    "dia": "Jueves 27/11",
+    "condicion": "Lluvia",
+    "temperatura_maxima": 27,
+    "temperatura_minima": 20,
+    "Probabilidad_de_lluvia": 65,
+    "id": "32"
+  },
+  {
+    "dia": "Viernes 28/11",
+    "condicion": "Tormenta",
+    "temperatura_maxima": 29,
+    "temperatura_minima": 22,
+    "Probabilidad_de_lluvia": 90,
+    "id": "33"
+  },
+  {
+    "dia": "Sábado 29/11",
+    "condicion": "Nublado",
+    "temperatura_maxima": 25,
+    "temperatura_minima": 18,
+    "Probabilidad_de_lluvia": 40,
+    "id": "34"
+  },
+  {
+    "dia": "Domingo 30/11",
+    "condicion": "Soleado",
+    "temperatura_maxima": 33,
+    "temperatura_minima": 20,
+    "Probabilidad_de_lluvia": 5,
+    "id": "35"
+  },
+  {
+    "dia": "Lunes 01/12",
+    "condicion": "Parcialmente nublado",
+    "temperatura_maxima": 30,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 25,
+    "id": "36"
+  },
+  {
+    "dia": "Martes 02/12",
+    "condicion": "Lluvia",
+    "temperatura_maxima": 26,
+    "temperatura_minima": 18,
+    "Probabilidad_de_lluvia": 60,
+    "id": "37"
+  },
+  {
+    "dia": "Miércoles 03/12",
+    "condicion": "Tormenta",
+    "temperatura_maxima": 28,
+    "temperatura_minima": 21,
+    "Probabilidad_de_lluvia": 85,
+    "id": "38"
+  },
+  {
+    "dia": "Jueves 04/12",
+    "condicion": "Nublado",
+    "temperatura_maxima": 27,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 35,
+    "id": "39"
+  },
+  {
+    "dia": "Viernes 05/12",
+    "condicion": "Soleado",
+    "temperatura_maxima": 32,
+    "temperatura_minima": 20,
+    "Probabilidad_de_lluvia": 10,
+    "id": "40"
+  },
+  {
+    "dia": "Sábado 06/12",
+    "condicion": "Parcialmente nublado",
+    "temperatura_maxima": 31,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 25,
+    "id": "41"
+  },
+  {
+    "dia": "Domingo 07/12",
+    "condicion": "Lluvia",
+    "temperatura_maxima": 27,
+    "temperatura_minima": 20,
+    "Probabilidad_de_lluvia": 70,
+    "id": "42"
+  },
+  {
+    "dia": "Lunes 08/12",
+    "condicion": "Tormenta",
+    "temperatura_maxima": 28,
+    "temperatura_minima": 22,
+    "Probabilidad_de_lluvia": 90,
+    "id": "43"
+  },
+  {
+    "dia": "Martes 09/12",
+    "condicion": "Nublado",
+    "temperatura_maxima": 26,
+    "temperatura_minima": 18,
+    "Probabilidad_de_lluvia": 40,
+    "id": "44"
+  },
+  {
+    "dia": "Miércoles 10/12",
+    "condicion": "Soleado",
+    "temperatura_maxima": 33,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 5,
+    "id": "45"
+  },
+  {
+    "dia": "Jueves 11/12",
+    "condicion": "Parcialmente nublado",
+    "temperatura_maxima": 30,
+    "temperatura_minima": 20,
+    "Probabilidad_de_lluvia": 20,
+    "id": "46"
+  },
+  {
+    "dia": "Viernes 12/12",
+    "condicion": "Lluvia",
+    "temperatura_maxima": 26,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 65,
+    "id": "47"
+  },
+  {
+    "dia": "Sábado 13/12",
+    "condicion": "Tormenta",
+    "temperatura_maxima": 28,
+    "temperatura_minima": 21,
+    "Probabilidad_de_lluvia": 85,
+    "id": "48"
+  },
+  {
+    "dia": "Domingo 14/12",
+    "condicion": "Nublado",
+    "temperatura_maxima": 27,
+    "temperatura_minima": 19,
+    "Probabilidad_de_lluvia": 35,
+    "id": "49"
+  },
+  {
+    "dia": "Lunes 15/12",
+    "condicion": "Soleado",
+    "temperatura_maxima": 32,
+    "temperatura_minima": 20,
+    "Probabilidad_de_lluvia": 10,
+    "id": "50"
+  }
+]

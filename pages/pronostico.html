@@ -3,13 +3,19 @@
     <!-- Filtro y botones -->
     <div class="filtro-container">
         <input type="text" id="filtro_condicion" placeholder="Buscar...">
-        <button id="btn_limpiar_filtro">Limpiar Filtro</button>
-        <button id="btn_anterior">Semana Anterior</button>
-        <button id="btn_siguiente">Semana Siguiente</button>
-        <button id="btn_abrir_agregar">Agregar Pronóstico</button>
+        <button id="btn_limpiar_filtro">Limpiar filtro</button>
+        <button id="btn_abrir_agregar">Agregar pronóstico</button>
     </div>
 
+    
+    
     <div class="scroll_horizontal">
+
+        <div class="navegacion-tabla">
+            <button id="btn_anterior">Semana anterior</button>
+            <button id="btn_siguiente">Semana siguiente</button>
+        </div>
+
         <table id="tabla_clima">
             <thead>
                 <td id="dia">Día</td>
@@ -25,14 +31,13 @@
     
         </table>
     </div>
+    
 
     <!-- Popup Agregar pronostico -->
     <div id="popup_overlay_agregar" class="popup-overlay">
         <div id="popup_agregar" class="popup-modal">
             <h3>Agregar Pronóstico</h3>
             <form id="form_agregar">
-                <label for="id_agregar">ID</label>
-                <input type="number" id="id_agregar" placeholder="ID">
 
                 <label for="dia_agregar">Día</label>
                 <input type="text" id="dia_agregar" placeholder="Día">

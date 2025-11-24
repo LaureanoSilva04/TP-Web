@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     "use strict";
     
     // ------------------------------------------- NAV (general)-------------------------------------------------------------
+    const navbar = document.querySelector('.nav');
+    
     const abrirMenu = document.getElementById("abrir_menu");
     abrirMenu.addEventListener('click', desplegarMenu);
     
@@ -9,9 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
     cerrarMenu.addEventListener('click', desplegarMenu);
     
     function desplegarMenu() {
-        document.querySelector('.nav').classList.toggle('desplegar');
+        navbar.classList.toggle('desplegar');
     }
-    
+
+    // Cerrar navbar al hacer click fuera
+    window.addEventListener('click', (e) => {
+    if (navbar.classList.contains('desplegar') && !navbar.contains(e.target) && e.target !== btnMenu) {
+        navbar.classList.toggle('desplegar');
+    }
+    });
+                        
     
     // ------------------------------------------ MODO OSCURO (general)----------------------------------------------------
     
@@ -27,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // cambia la imagen según el modo
         if (document.body.classList.contains('oscuro')) {
     
-            localStorage.setItem('modoOscuro', 'true');// guarda en localStorage que el modo oscuro está ACTIVADO
+            localStorage.setItem('modoOscuro', 'true');// guarda en localStorage que el modo oscuro está activado
     
             btnModo.src = "Imgs/modo-claro.png";
             btnModo.title = "Modo claro";
@@ -37,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cerrarMenu.src = "Imgs/barra-de-menus-claro.png";
         } else {
     
-            localStorage.setItem('modoOscuro', 'false');// guarda en localStorage que el modo oscuro está DESACTIVADO
+            localStorage.setItem('modoOscuro', 'false');// guarda en localStorage que el modo oscuro está desactivado
     
             btnModo.src = "Imgs/modo-oscuro.png";
             btnModo.title = "Modo oscuro"
@@ -177,7 +186,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function abrirPopupAgregar() {
-        document.querySelector("#id_agregar").value = "";
         document.querySelector("#dia_agregar").value = "";
         document.querySelector("#condicion_agregar").value = "";
         document.querySelector("#temp_max_agregar").value = "";
@@ -187,10 +195,19 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector("#popup_overlay_agregar").classList.add("visible");
     }
 
+    
     function cerrarPopupAgregar() {
         document.querySelector("#popup_overlay_agregar").classList.remove("visible");
     }
+    
+    // Cerrar popup al hacer click fuera
+    window.addEventListener('click', (e) => {
+    if (e.target.classList.contains("popup-overlay")) {
+        e.target.classList.remove("visible");
+    }
+    });
 
+    
     async function sendData() {
         let id = document.querySelector("#id_agregar").value;
         let dia = document.querySelector("#dia_agregar").value;
@@ -287,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     } 
 
-// -----------------------------------Funcionalidad para eliminar filas (api clima)-------------------------------------------
+// -----------------------------------Funcionalidad para eliminar filas-------------------------------------------
 
     async function deleteData() {
 
@@ -314,11 +331,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --------------------------------------PAGINACION PRONOSTICO (api clima) --------------------------------------------
+    // --------------------------------------PAGINACION PRONOSTICO --------------------------------------------
 
     urlObj.searchParams.set('page', 1);
     urlObj.searchParams.set('limit', 7);
 
+    // Pagina siguiente
     function paginacionSiguiente(){
         
         let inicio = parseInt (urlObj.searchParams.get('page'));
@@ -328,6 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
         getData();
     }
 
+    // Página anterior
     function paginacionAnterior(){
         let inicio = parseInt (urlObj.searchParams.get('page'));
         if (inicio > 1){
@@ -339,30 +358,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
 
-    // ----------------------------------------FILTROS PRONOSTICO (api clima) ---------------------------------------------
+    // ----------------------------------------FILTROS PRONOSTICO ---------------------------------------------
 
     // Filtrar por condicion, dia, temperaturas y probabilidad de lluvia
     function filtrar(){
+        //Obtengo el valor del filtro
         let valorFiltro = document.querySelector("#filtro_condicion").value.toLowerCase();
+        // Obtengo la tabla donde se van a mostrar los datos filtrados
         let tablaClima = document.querySelector("#tabla_clima tbody");
-
         tablaClima.innerHTML = "";
+        // Recorro el array de datos y verifico si coinciden con el filtro
         for(let i = 0; i < datosClima.length; i++){
+            // Obtengo el item actual
             let item = datosClima[i];
-
             // Convierto a texto los valores a comparar
             let diaTexto = item.dia.toLowerCase();
             let condicionTexto = item.condicion.toLowerCase();
             let tempMaxTexto = item.temperatura_maxima.toString();
             let tempMinTexto = item.temperatura_minima.toString();
             let probLluviaTexto = item.Probabilidad_de_lluvia.toString();
-
+            // Verifico si coincide con el filtro
             let coincide = diaTexto.includes(valorFiltro) ||
                         condicionTexto.includes(valorFiltro) ||
                         tempMaxTexto.includes(valorFiltro) ||
                         tempMinTexto.includes(valorFiltro) ||
                         probLluviaTexto.includes(valorFiltro);
-
+            // Si coincide, lo agrego a la tabla
             if(coincide) {
                 let fila = crearFilaTabla(item);
                 tablaClima.appendChild(fila);
@@ -375,7 +396,7 @@ document.addEventListener('DOMContentLoaded', () => {
         getData();
     }
 
-    // ------------------------------------------ INICIALIZAR PRONOSTICO (api clima) ------------------------------------------------
+    // ------------------------------------------ INICIALIZAR PRONOSTICO ------------------------------------------------
 
     function initPronostico() {
         // Verificar si estamos en la página de pronóstico
@@ -393,8 +414,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 abrirPopupModificar(idModificar);
             }
         });
-
-        // ----------------------------------------------- BTN ACCIONES (api clima) -------------------------------------------------------
 
         // Abrir popup agregar
         let btnAbrirAgregar = document.querySelector("#btn_abrir_agregar");
@@ -532,6 +551,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Cargar página inicial
-    loadPage("pages/home.html");
+    const initialPage = location.hash ? location.hash.substring(1) : "pages/home.html";
+    loadPage(initialPage);
 });

@@ -63,7 +63,7 @@ h3, h4{
 .scroll_horizontal {
   width: 100%;
   overflow: auto;
-  margin: 20px auto;
+  margin: 5px auto;
 }
 
 table {
@@ -105,7 +105,8 @@ td {
   width: 95%;
 }
   
-.filtro-container button {
+.filtro-container button,
+.navegacion-tabla button {
   font-size: 12px;
   padding: 8px;
 }
@@ -115,7 +116,15 @@ td {
   padding: 8px;
 }
 
-/* ----------------------------------------------- PRONOSTICO --------------------------------------------------- */
+.navegacion-tabla{
+  margin-top : 30px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* -------------------------------------- PRONOSTICO --------------------------------------------------- */
 .filtro-container {
   width: 80%;
   margin: 10px auto;
@@ -133,6 +142,7 @@ margin-bottom: 7px;;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+            overflow-y: auto;
 }
 
 .popup-overlay.visible {
@@ -189,7 +199,7 @@ body.oscuro .popup-modal {
   margin-right: 7px;
 }
 
-/* ----------------------------------------------- NAVBAR --------------------------------------------------------- */
+/* -------------------------------------------NAVBAR --------------------------------------------------------- */
 .nav {
   opacity: 0;
   visibility: hidden;
@@ -236,7 +246,7 @@ body.oscuro .popup-modal {
   transform: translate(0%);
 }
 
-/* -------------------------------------------- IMAGENES HOME --------------------------------------------------- */
+/* --------------------------------------IMAGENES HOME--------------------------------------------------- */
 .content-acuerdo img,
 .imgs-ul img {
   width: 90%;
@@ -261,7 +271,7 @@ body.oscuro .popup-modal {
   margin-bottom: 30px;
 }
 
-/* --------------------------------------------- FORMULARIO ------------------------------------------------------ */
+/* -------------------------------------- FORMULARIO ------------------------------------------------------ */
 
 form {
   display: flex;
@@ -332,7 +342,7 @@ button:hover {
   text-align: center;
 }
 
-/* ------------------------------------------------ DARK MODE ---------------------------------------------------- */
+/* --------------------------------------- DARK MODE ---------------------------------------------------- */
 
 body.oscuro {
   background-color: rgb(0, 0, 0);
@@ -375,7 +385,7 @@ body.oscuro nav a {
     margin-right: auto;
   }
 
-  /* -------------------------------------------- NAVBAR --------------------------------------------------------- */
+  /* ------------------------------------NAVBAR --------------------------------------------------------- */
 
   .btn_menu {
     display: none;
@@ -420,7 +430,7 @@ body.oscuro nav a {
 
   table {
     width: 80%;
-    margin: 20px auto 50px auto;
+    margin: 10px auto 50px auto;
     font-size: 15px;
   }
 
@@ -441,7 +451,16 @@ body.oscuro nav a {
     font-size: 15px;
   }
   
-  .filtro-container button {
+  .filtro-container button, 
+  .navegacion-tabla button {
     font-size: 15px;
   }
+}
+
+.navegacion-tabla{
+  width: 80%;
+  margin: 30px auto 0PX auto;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
 }
