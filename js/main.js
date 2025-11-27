@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
     async function sendData() {
-        let id = document.querySelector("#id_agregar").value;
+        //let id = document.querySelector("#id_agregar").value;
         let dia = document.querySelector("#dia_agregar").value;
         let condicion = document.querySelector("#condicion_agregar").value;
         let temperaturaMaxima = document.querySelector("#temp_max_agregar").value;
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let probabilidadDeLluvia = document.querySelector("#prob_lluvia_agregar").value;
 
         let data = {
-            id: id,
+            //id: id,
             dia: dia,
             condicion: condicion,
             temperatura_maxima: temperaturaMaxima,
@@ -364,9 +364,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function filtrar(){
         //Obtengo el valor del filtro
         let valorFiltro = document.querySelector("#filtro_condicion").value.toLowerCase();
+        
         // Obtengo la tabla donde se van a mostrar los datos filtrados
         let tablaClima = document.querySelector("#tabla_clima tbody");
         tablaClima.innerHTML = "";
+        
         // Recorro el array de datos y verifico si coinciden con el filtro
         for(let i = 0; i < datosClima.length; i++){
             // Obtengo el item actual
